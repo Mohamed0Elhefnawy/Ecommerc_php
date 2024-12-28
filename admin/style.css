@@ -1,0 +1,229 @@
+:root{
+    --bodybg: #f6f6f6;
+    --bodyfont: rgba(0, 0, 0, 0.856);
+    --blue: #9fc5ef;
+    --blue1: rgb(72, 220, 234);
+    --icon:rgba(0, 0, 0, 0.614);
+    --blue-button: #1976d2;
+    --footer-bg: #212529;
+    --white: #fff;
+    --red-button: #e41d43;
+    --ubdate: rgb(3, 228, 100);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    background-color: #fff;
+}
+
+.sidebar_container{
+    display: flex;
+    position: relative;
+
+    & .sidebar{
+        background-color: rgb(2, 16, 33);
+        position: fixed;
+        right: 20px;
+        width: 280px;
+        height: 95%;
+    }
+    & .sidebar h1{
+        color: #fff;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    & .sidebar ul li{
+        font-size: 28px;
+        padding: 10px;
+        border-bottom: 1px solid #fff;
+        float: right;
+
+    }
+
+    & .sidebar ul li i{
+        margin-left: 30px;
+        color: #fff;
+    }
+    & .sidebar ul li a{
+        display: block;
+        color: #fff;
+        padding: 10px;
+    }
+
+    & .sidebar ul li a:hover{
+        background-color: var(--blue);
+        color: var(--footer-bg);
+    }
+
+    & .content_sec{
+        width: 70%;
+        margin-left: 40px;
+        padding: 20px;
+    }
+    
+    & .content_sec label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 40px;
+        margin-right: 40px;
+        text-align: right;
+    }
+
+    & .content_sec input{
+        width: 100%;
+        padding: 15px;
+        margin-bottom: 10px;
+        border: 1px solid black;
+
+    }
+
+    & .content_sec .add{
+        background-color: var(--blue-button);
+        border: none;
+        color: var(--white);
+        padding: 15px 30px;
+        text-align: center;
+        font-size: 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        
+
+    }
+
+    & .content_sec .add:hover{
+        background-color: var(--blue);
+    }
+    & table{
+        background-color: var(--white);
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    & table th,td{
+        font-size: 22px;
+        padding: 8px;
+        text-align: center;
+        border: 1px solid #ddd ;
+        
+    }
+
+    & table th{
+        background-color: var(--blue);
+    }
+
+    & table .delet{
+        color: var(--white);
+        font-size: 15px;
+        background-color: red;
+        padding: 6px 14px;
+        border-radius: 2px;
+        /* border: 1px solid ; */
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    & table .delet:hover{
+        background-color: #e41d43;
+    }
+
+    .updat{
+        color: var(--white);
+        font-size: 15px;
+        background-color: red;
+        padding: 6px 14px;
+        border-radius: 2px;
+        /* border: 1px solid ; */
+        margin-right: 5px;
+        border: none;
+        cursor: pointer;
+    }
+
+    & table .updat:hover{
+        background-color: #e41d43;
+    }
+
+
+}
+
+/* start style for page add product */
+
+.form_product{
+    width: 70%;
+    margin: 50px;
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+
+    & h1{
+        padding: 10px;
+    }
+
+    & label{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 25px;
+    }
+
+    & input{
+        width: 80%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    & button{
+        width: 90%;
+        padding: 10px;
+        margin-bottom: 15px;
+        background-color:var(--blue-button) ;
+        border: none;
+        cursor: pointer;
+        font-size: 28px;
+    }
+
+    & button:hover{
+        background-color:var(--blue) ;
+        color: var(--white);
+    }
+
+    & #asec{
+        width: 80%;
+        padding: 12px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+}
+
+/* update product page */
+.UPDATE{
+    color: var(--white);
+    font-size: 15px;
+    /* background-color: rgb(3, 228, 100); */
+    background-color: rgb(37, 3, 228);
+    padding: 6px 14px;
+    border-radius: 2px;
+    /* border: 1px solid ; */
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+.UPDATE:hover{
+    background-color:  rgb(8, 100, 20);
+}
+
+.img_size{
+    width: 50px;
+    height: 50px;
+}
